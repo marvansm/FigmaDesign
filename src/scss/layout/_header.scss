@@ -1,0 +1,50 @@
+header {
+  padding: 24px 162px;
+  background-color: #1a1a1a;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      font-family: $inter-fonts;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      color: #fff;
+      .active {
+        padding: 14px 24px;
+        border-radius: 10px;
+        border: 1px solid #333;
+        background: #141414;
+        color: #fff;
+      }
+      li {
+        color: #7e7e81;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+    button {
+      border: none;
+      display: flex;
+      padding: 14px 20px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      background: #ffd11a;
+      color: #141414;
+      font-family: $inter-fonts;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  }
+}
