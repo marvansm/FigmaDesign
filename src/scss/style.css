@@ -219,7 +219,6 @@ header nav button {
   display: flex;
   align-items: center;
   gap: 60px;
-  flex-wrap: wrap;
 }
 #banner .heading .rowing-text h2 {
   color: var(--Absolute-White, #fff);
