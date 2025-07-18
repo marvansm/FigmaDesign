@@ -347,18 +347,16 @@ header nav button {
 }
 
 #news {
-  padding: 80px 162px;
+  padding: 60px 80px;
   background: var(--Dark-08, #141414);
 }
 #news .box {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 #news .box .boxImg {
-  width: 515px;
-  height: 427px;
-  border-radius: 12px;
+  width: 100%;
   overflow: hidden;
 }
 #news .box .boxImg img {
@@ -366,68 +364,47 @@ header nav button {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
-#news .box .boxBody .text {
-  margin-top: 20px;
+#news .boxBody .text {
+  margin-top: 16px;
   display: flex;
-  gap: 10px;
+  gap: 4px;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
-#news .box .boxBody .text h2 {
+#news .boxBody .text h2 {
   color: var(--Absolute-White, #fff);
   font-family: Inter;
-  font-size: 32px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.96px;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.48px;
 }
-#news .box .boxBody .text p {
+#news .boxBody .text p {
   color: var(--Grey-60, #98989a);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.6px;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.48px;
 }
-#news .box .boxBody .moreInfo {
-  display: flex;
-  gap: 50px;
-  margin-bottom: 50px;
-}
-#news .box .boxBody .moreInfo ul .head {
-  color: var(--Grey-60, #98989a);
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 27px */
-  letter-spacing: -0.54px;
-}
-#news .box .boxBody .moreInfo ul .content {
-  color: var(--Absolute-White, #fff);
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 27px */
-  letter-spacing: -0.54px;
-}
-#news .box .boxBody .actions {
+#news .boxBody .actions {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
 }
-#news .box .boxBody .actions .action-btn {
+#news .boxBody .actions .action-btn {
   display: flex;
   gap: 16px;
   align-items: center;
 }
-#news .box .boxBody .actions .action-btn button {
+#news .boxBody .actions .action-btn button {
   display: flex;
-  padding: 8px 16px;
+  padding: 6px 14px;
   justify-content: center;
   align-items: center;
   gap: 4px;
@@ -436,25 +413,361 @@ header nav button {
   background: var(--Dark-10, #1a1a1a);
   color: var(--Grey-60, #98989a);
   font-family: "Kumbh Sans";
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 27px */
-  letter-spacing: -0.54px;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.42px;
 }
-#news .box .boxBody .actions .more {
+#news .boxBody .actions .more {
   display: flex;
-  padding: 18px 24px;
+  padding: 14px 20px;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  border-radius: 12px;
+  gap: 4px;
+  flex: 1 0 0;
+  border-radius: 8px;
   border: 1px solid var(--Dark-15, #262626);
   background: var(--Dark-08, #141414);
   color: var(--Grey-60, #98989a);
   font-family: Inter;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.42px;
+}
+
+#hub .hubHeader {
+  border-top: 1px solid var(--Dark-15, #262626);
+  border-bottom: 1px solid var(--Dark-15, #262626);
+  background: var(--Dark-10, #1a1a1a);
+  padding: 80px;
+}
+#hub .hubHeader .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hub .hubHeader .heading .text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 14px;
+}
+#hub .hubHeader .heading .text button {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--Dark-20, #333);
+  color: var(--Absolute-White, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.48px;
+}
+#hub .hubHeader .heading .text h1 {
+  color: var(--Absolute-White, #fff);
+  font-family: "Kumbh Sans";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 57.2px */
+  letter-spacing: -1.32px;
+}
+#hub .hubHeader .heading button {
+  display: flex;
+  padding: 14px 20px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid var(--Dark-15, #262626);
+  background: var(--Dark-08, #141414);
+  color: var(--Grey-60, #98989a);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.42px;
+}
+#hub .discoverList {
+  padding: 40px 80px;
+  border-bottom: 1px solid var(--Dark-15, #262626);
+  background: var(--Dark-08, #141414);
+}
+#hub .discoverList ul {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+#hub .discoverList ul .active {
+  display: flex;
+  padding: 24px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 7px;
+  border: 1px solid var(--Dark-15, #262626);
+  background: var(--Dark-10, #1a1a1a);
+  color: var(--Absolute-White, #fff);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.42px;
+}
+#hub .discoverList ul li {
+  display: flex;
+  padding: 24px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 7px;
+  border: 1px solid var(--Dark-15, #262626);
+  color: var(--Grey-60, #98989a);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.42px;
+}
+#hub .reviews {
+  background: var(--Dark-08, #141414);
+}
+#hub .reviews .person {
+  padding: 60px 80px;
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid var(--Dark-15, #262626);
+}
+#hub .reviews .person .avatar {
+  display: flex;
+  width: 305px;
+  align-items: start;
+  gap: 10px;
+}
+#hub .reviews .person .avatar ul {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+#hub .reviews .person .avatar ul li {
+  display: flex;
+  flex-direction: column;
+}
+#hub .reviews .person .avatar ul li img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#hub .reviews .person .avatar ul li h2 {
+  color: var(--Absolute-White, #fff);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
   line-height: 150%; /* 27px */
   letter-spacing: -0.54px;
+}
+#hub .reviews .person .avatar ul li span {
+  color: var(--Grey-60, #98989a);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.48px;
+}
+#hub .reviews .person .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hub .reviews .person .content .text h2 {
+  color: var(--Grey-60, #98989a);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 27px */
+  letter-spacing: -0.54px;
+}
+#hub .reviews .person .content .text h3 {
+  margin-top: 24px;
+  color: var(--Absolute-White, #fff);
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 33px */
+  letter-spacing: -0.66px;
+  margin-bottom: 6px;
+}
+#hub .reviews .person .content .text p {
+  color: var(--Grey-60, #98989a);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+  margin-bottom: 24px;
+}
+#hub .reviews .person .content .text ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#hub .reviews .person .content .text ul li {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 100px;
+  border: 1px solid var(--Dark-15, #262626);
+  background: var(--Dark-10, #1a1a1a);
+  color: var(--Grey-60, #98989a);
+  font-family: "Kumbh Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.42px;
+}
+#hub .reviews .person .content .text ul li .ri-heart-3-fill {
+  color: red;
+}
+#hub .reviews .person .content .text ul li i {
+  width: 20px;
+  height: 20px;
+}
+#hub .reviews .person .content .readMore button {
+  display: flex;
+  padding: 14px 20px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid var(--Dark-15, #262626);
+  background: var(--Dark-08, #141414);
+  color: var(--Grey-60, #98989a);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.42px;
+}
+
+#featured {
+  background: var(--Dark-08, #141414);
+}
+#featured .featuredHeader {
+  border-top: 1px solid var(--Dark-15, #262626);
+  border-bottom: 1px solid var(--Dark-15, #262626);
+  background: var(--Dark-10, #1a1a1a);
+  padding: 80px;
+}
+#featured .featuredHeader .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#featured .featuredHeader .heading .text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 14px;
+}
+#featured .featuredHeader .heading .text button {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--Dark-20, #333);
+  color: var(--Absolute-White, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.48px;
+}
+#featured .featuredHeader .heading .text h1 {
+  color: var(--Absolute-White, #fff);
+  font-family: "Kumbh Sans";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 57.2px */
+  letter-spacing: -1.32px;
+}
+#featured .featuredHeader .heading button {
+  display: flex;
+  padding: 14px 20px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid var(--Dark-15, #262626);
+  background: var(--Dark-08, #141414);
+  color: var(--Grey-60, #98989a);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.42px;
+}
+#featured .video .box {
+  padding: 60px 80px;
+  width: 100%;
+  border-right: 1px solid #262626;
+  border-top: 1px solid #262626;
+}
+#featured .video .box .box-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#featured .video .box .boxBody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 20px;
+}
+#featured .video .box .boxBody h2 {
+  color: var(--Absolute-White, #fff);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.6px;
+}
+#featured .video .box .boxBody h3 {
+  color: var(--Grey-60, #98989a);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.48px;
 }/*# sourceMappingURL=style.css.map */
