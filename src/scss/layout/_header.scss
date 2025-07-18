@@ -1,50 +1,61 @@
 header {
-  padding: 24px 162px;
+  padding: 20px 80px;
   background-color: #1a1a1a;
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo {
+      width: 143.125px;
+      height: 40px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
     ul {
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: 24px;
       font-family: $inter-fonts;
-      font-size: 18px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 500;
       line-height: 150%;
       color: #fff;
       .active {
-        padding: 14px 24px;
-        border-radius: 10px;
-        border: 1px solid #333;
-        background: #141414;
-        color: #fff;
+        display: flex;
+        padding: 10px 18px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        border: 1px solid var(--Dark-20, #333);
+        background: var(--Dark-08, #141414);
       }
       li {
-        color: #7e7e81;
+        color: var(--Grey-50, #7e7e81);
         font-family: Inter;
-        font-size: 18px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
       }
     }
     button {
-      border: none;
       display: flex;
-      padding: 14px 20px;
+      padding: 10px 14px;
       align-items: center;
       gap: 10px;
-      border-radius: 10px;
-      background: #ffd11a;
-      color: #141414;
-      font-family: $inter-fonts;
-      font-size: 18px;
+      border-radius: 6px;
+      border: none;
+      background: var(--Yellow-55, #ffd11a);
+      color: var(--Dark-08, #141414);
+      font-family: Inter;
+      font-size: 14px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%;
+      line-height: 150%; /* 21px */
     }
   }
 }

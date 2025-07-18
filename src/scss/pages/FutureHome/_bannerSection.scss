@@ -1,51 +1,53 @@
 #banner {
   background: var(--Dark-08, #141414);
   .heading {
-    padding: 130px 162px;
+    padding: 80px 80px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.418);
     h1 {
       color: var(--Absolute-White, #fff);
       font-family: "Kumbh Sans";
-      font-size: 80px;
+      font-size: 55px;
       font-style: normal;
       font-weight: 500;
-      line-height: 130%; /* 104px */
-      letter-spacing: -2.4px;
+      line-height: 130%;
+      letter-spacing: -1.65px;
     }
     .rowing-text {
       display: flex;
       align-items: center;
-      gap: 80px;
+      gap: 60px;
+      flex-wrap: wrap;
       h2 {
         color: var(--Absolute-White, #fff);
         font-family: "Kumbh Sans";
-        font-size: 80px;
+        font-size: 55px;
         font-style: normal;
         font-weight: 500;
-        letter-spacing: -2.4px;
+        line-height: 130%;
+        letter-spacing: -1.65px;
       }
       p {
         color: var(--Grey-60, #98989a);
         font-family: Inter;
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        letter-spacing: -0.54px;
+        letter-spacing: -0.48px;
       }
     }
   }
   .popularNews {
-    padding: 80px 162px;
-      border-bottom: 1px solid rgba(128, 128, 128, 0.418);
+    padding: 60px 80px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.418);
     .box {
       display: flex;
       gap: 80px;
       align-items: center;
       .boxImg {
         width: 515px;
-        height: 427px;
-        border-radius: 12px;
+        height: 325px;
+        border-radius: 10px;
         overflow: hidden;
         img {
           width: 100%;
@@ -55,51 +57,52 @@
       }
       .boxBody {
         .text {
-          display: flex;
-          gap: 30px;
-          flex-direction: column;
-          margin-bottom: 50px;
+    
+
           h2 {
             color: var(--Absolute-White, #fff);
             font-family: Inter;
-            font-size: 32px;
+            font-size: 24px;
             font-style: normal;
             font-weight: 600;
-            line-height: 150%;
-            letter-spacing: -0.96px;
+            line-height: 150%; /* 36px */
+            letter-spacing: -0.72px;
           }
           p {
+            margin-top: 14px;
             color: var(--Grey-60, #98989a);
             font-family: Inter;
-            font-size: 20px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
-            line-height: 150%; /* 30px */
-            letter-spacing: -0.6px;
+            line-height: 150%; /* 27px */
+            letter-spacing: -0.54px;
           }
         }
         .moreInfo {
           display: flex;
-          gap: 50px;
-          margin-bottom: 50px;
+          gap: 30px;
+          margin-top: 40px;
+          margin-bottom: 40px;
           ul {
+          
             .head {
               color: var(--Grey-60, #98989a);
               font-family: Inter;
-              font-size: 18px;
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
-              line-height: 150%; /* 27px */
-              letter-spacing: -0.54px;
+              line-height: 150%; /* 24px */
+              letter-spacing: -0.48px;
             }
             .content {
               color: var(--Absolute-White, #fff);
               font-family: Inter;
-              font-size: 18px;
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
-              line-height: 150%; /* 27px */
-              letter-spacing: -0.54px;
+              line-height: 150%; /* 24px */
+              letter-spacing: -0.48px;
             }
           }
         }
