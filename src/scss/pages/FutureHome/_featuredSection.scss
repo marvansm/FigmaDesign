@@ -6,7 +6,9 @@
     border-bottom: 1px solid var(--Dark-15, #262626);
     background: var(--Dark-10, #1a1a1a);
     padding: 80px;
-
+    @media screen and (max-width: 768px) {
+      padding: 40px 16px;
+    }
     .heading {
       display: flex;
       align-items: center;
@@ -58,14 +60,65 @@
         line-height: 150%; /* 21px */
         letter-spacing: -0.42px;
       }
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        .text {
+          display: flex;
+          flex-direction: column;
+
+          h1 {
+            color: var(--Absolute-White, #fff);
+            font-family: "Kumbh Sans";
+            width: 300px;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            letter-spacing: -0.84px;
+          }
+          button {
+            width: 250px;
+            padding: 4px 8px;
+            gap: 10px;
+            border-radius: 4px;
+            background: var(--Dark-20, #333);
+            color: var(--Absolute-White, #fff);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: -0.42px;
+          }
+        }
+
+        button {
+          display: flex;
+          padding: 14px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          align-self: stretch;
+          border-radius: 8px;
+          border: 1px solid var(--Dark-15, #262626);
+          background: var(--Dark-08, #141414);
+          color: var(--Grey-60, #98989a);
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: -0.42px;
+        }
+      }
     }
   }
   .video {
     .box {
       padding: 60px 80px;
       width: 100%;
-      border-right: 1px solid #262626;
-      border-top: 1px solid #262626;
 
       .box-img {
         img {
@@ -96,6 +149,32 @@
           font-weight: 400;
           line-height: 150%; /* 24px */
           letter-spacing: -0.48px;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .box {
+        padding: 40px 16px;
+
+        .boxBody {
+          h2 {
+            color: var(--Absolute-White, #fff);
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: -0.54px;
+          }
+          h3 {
+            color: var(--Grey-60, #98989a);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: -0.42px;
+          }
         }
       }
     }

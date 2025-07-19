@@ -1,0 +1,135 @@
+.moreActions {
+  background: var(--Dark-10, #1a1a1a);
+
+  .text {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+
+    .learn {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      align-self: stretch;
+
+      .logo_img {
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .learn_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        flex: 1 0 0;
+
+        h2 {
+          color: var(--Absolute-White, #fff);
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          letter-spacing: -0.48px;
+        }
+
+        h1 {
+          align-self: stretch;
+          color: var(--Absolute-White, #fff);
+          font-family: "Kumbh Sans";
+          font-size: 44px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130%;
+          letter-spacing: -1.32px;
+        }
+
+        p {
+          align-self: stretch;
+          color: var(--Grey-50, #7e7e81);
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: -0.48px;
+        }
+      }
+    }
+
+    .acces {
+      display: flex;
+      padding: 10px;
+      align-items: flex-start;
+      gap: 10px;
+      align-self: stretch;
+      border-radius: 10px;
+      border: 1px solid var(--Dark-15, #262626);
+      background: var(--Dark-08, #141414);
+    }
+
+    .acces_card {
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      flex: 1 0 0;
+      border-radius: 10px;
+      border: 1px solid var(--Dark-15, #262626);
+      background: var(--Dark-10, #1a1a1a);
+
+      .card_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+
+        h2 {
+          flex: 1 0 0;
+          color: var(--Absolute-White, #fff);
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+          letter-spacing: -0.54px;
+        }
+        button {
+          border: none;
+          width: 40px;
+          height: 40px;
+          border-radius: 100px;
+          background: var(--Yellow-55, #ffd11a);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 12px;
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+
+      .acces_text {
+        p {
+          align-self: stretch;
+          color: var(--Grey-60, #98989a);
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: -0.48px;
+        }
+      }
+    }
+  }
+}

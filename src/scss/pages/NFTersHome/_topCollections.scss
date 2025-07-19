@@ -1,0 +1,261 @@
+#topCollections {
+  margin-top: 134px;
+  .border {
+    width: 1px;
+    height: 540px;
+    background: #ececec;
+  }
+  .cards {
+    display: flex;
+    gap: 53px;
+    .box {
+      .boxImg {
+        width: 400px;
+        height: 424px;
+        flex-shrink: 0;
+        border-radius: 24px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .boxBody {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          li {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            color: #000;
+            font-family: "DM Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            span {
+              color: #363639;
+              font-family: "DM Sans";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            img {
+              width: 48px;
+              height: 48px;
+              flex-shrink: 0;
+              border-radius: 48px;
+              object-fit: contain;
+            }
+          }
+        }
+        .price {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          .title {
+            color: #3a3a3a;
+            font-family: "DM Sans";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 65px;
+            height: 16.41px;
+            flex-shrink: 0;
+          }
+          li {
+            color: #3a3a3a;
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            height: 21.538px;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+    .morecard {
+      display: flex;
+      flex-direction: column;
+      gap: 41px;
+      li {
+        .listCard {
+          display: flex;
+          gap: 20px;
+
+          .cardImg {
+            width: 147px;
+            height: 147px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .cardBody {
+            h2 {
+              color: #000;
+              font-family: "DM Sans";
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              margin-bottom: 9px;
+            }
+            ul {
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              li {
+                color: #757575;
+                font-family: "DM Sans";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                button {
+                  padding: 8px;
+                  gap: 5px;
+                  border-radius: 6px;
+                  border: 1px solid #00ac4f;
+                  color: #00ac4f;
+                  font-family: "DM Sans";
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                  background: transparent;
+                }
+                img {
+                  width: 34px;
+                  height: 34px;
+                  flex-shrink: 0;
+                  object-fit: contain;
+                  border-radius: 34px;
+                }
+              }
+            }
+            .bid {
+              margin-top: 16px;
+              display: inline-flex;
+              padding: 14px 20px;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              border-radius: 50px;
+              background: #3d00b7;
+              color: #fff;
+              -webkit-text-stroke-width: 0.2px;
+              -webkit-text-stroke-color: #fff;
+              font-family: "DM Sans";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .populars {
+    h1 {
+      color: #000;
+      font-family: "Integral";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    h2 {
+      margin-top: 10px;
+      color: #3d00b7;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .lists {
+        margin-top: 38px;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .number {
+          color: #000;
+          text-align: center;
+          font-family: "DM Sans";
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 103%;
+          letter-spacing: -0.6px;
+        }
+        .image {
+          img {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+            border-radius: 60px;
+          }
+        }
+        .name {
+          display: flex;
+          flex-direction: column;
+          gap: 13px;
+          color: #000;
+          font-family: "DM Sans";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 103%;
+          letter-spacing: -0.4px;
+          span {
+            color: #636363;
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 103%;
+            letter-spacing: -0.35px;
+          }
+        }
+        .discount {
+          color: #14c8b0;
+          text-align: right;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 103%;
+          letter-spacing: -0.5px;
+        }
+      }
+      .line {
+        margin-bottom: 20px;
+        margin-top: 27px;
+        width: 325px;
+        height: 1px;
+        background: #f0f0f0;
+      }
+    }
+  }
+}

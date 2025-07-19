@@ -1,6 +1,7 @@
-header {
+.FutureHeader {
   padding: 20px 80px;
   background-color: #1a1a1a;
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -55,7 +56,28 @@ header {
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%; /* 21px */
+      line-height: 150%;
+    }
+    .burger {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 20px 16px;
+    nav {
+      ul {
+        display: none;
+      }
+      .burger {
+        display: flex;
+      }
+      button {
+        display: none;
+      }
+      .logo {
+        width: 125.234px;
+        height: 35px;
+      }
     }
   }
 }

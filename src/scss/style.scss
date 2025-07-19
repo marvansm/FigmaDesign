@@ -1,8 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&display=swap");
+@font-face {
+  font-family: "Integral";
+  src: url("../assets/fonts/Fontspring-DEMO-integralcf-medium.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 @import "./base/reset";
 @import "./base/variable";
-@import "./layout/header";
+@import "./layout/FutureTech/header";
+@import "./layout/Nfters/header";
 @import "./pages/FutureHome/bannerSection";
 @import "./pages/FutureHome/newsSection";
 @import "./pages/FutureHome/hubSection";
 @import "./pages/FutureHome/featuredSection";
+@import "./pages/NFTersHome/discoverSection";
+@import "./pages/NFTersHome/topCollections";
+@import "./pages/FutureHome/moreAction";
+@import "./layout/FutureTech/footer";

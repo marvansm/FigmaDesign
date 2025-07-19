@@ -1,0 +1,119 @@
+header {
+  border-bottom: #efefef;
+  nav {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      .logo {
+        h1 {
+          color: #3d00b7;
+          font-family: "Integral";
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 800;
+          text-transform: uppercase;
+          line-height: normal;
+        }
+      }
+      .border {
+        width: 1px;
+        height: 47px;
+        background: #f4f4f4;
+        margin-left: 31px;
+        margin-right: 31px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 47px;
+        li {
+          color: #000;
+          font-family: "DM Sans", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.64px;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        border: 2px solid #efefef;
+        background: #fff;
+        padding: 0 20px;
+        input {
+          width: 100%;
+          border: none;
+          background: transparent;
+          color: #c0c0c0;
+          font-family: "DM Sans";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.64px;
+
+          &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            border: none;
+          }
+        }
+      }
+      .action {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .upload {
+          display: inline-flex;
+          padding: 18px 40px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 60px;
+          background: #3d00b7;
+          border: #3d00b7;
+          color: #fff;
+          font-family: "DM Sans";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%;
+          letter-spacing: 0.56px;
+        }
+        .wallet {
+          display: inline-flex;
+          padding: 18px 22px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 60px;
+          border: 2px solid #3d00b7;
+          color: #3d00b7;
+          font-family: "DM Sans";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%;
+          letter-spacing: 0.56px;
+        }
+      }
+    }
+  }
+}
